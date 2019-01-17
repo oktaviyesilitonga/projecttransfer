@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import DetailBank from '../src/container/DetailBank/DetailBank';
+import Error404 from '../src/container/Error404/Error404';
+import ResendCode from '../src/container/ResendCode/ResendCode';
+import TranferSuccess from '../src/container/Transfer/TransferSuccess/TransferSuccess';
+import TransferUnsuccess from '../src/container/Transfer/TransferUnsuccess/TransferUnsuccess';
+import Welcome from '../src/container/Welcome/Welcome';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Welcome} />
+          <Route path="/detailbank" component={DetailBank} />
+          <Route path="/resendcode" component={ResendCode} />
+          <Route path="/transfersuccess" component={TranferSuccess} />
+          <Route path="/transferunsuccess" component={TransferUnsuccess} />
+          <Route path="/error404" component={Error404} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
