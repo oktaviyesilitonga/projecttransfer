@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import DetailBank from '../src/container/DetailBank/DetailBank';
 import Error404 from '../src/container/Error404/Error404';
 import ResendCode from '../src/container/ResendCode/ResendCode';

@@ -1,11 +1,7 @@
 import React from 'react';
 
-const Input = () => {
-  return (
-    <div>
-      <h1>Input</h1>
-    </div>
-  )
-}
+const Input = (props) => (
+    <input type="text" className={props.classInput} />
+)
 
 export default Input;

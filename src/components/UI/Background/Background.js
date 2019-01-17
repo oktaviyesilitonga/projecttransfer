@@ -1,11 +1,8 @@
 import React from 'react';
+import ImageBackground from '../../../assets/images/background/body-desktop.png';
 
-const Background = () => {
-  return (
-    <div>
-      <h1>Background</h1>
-    </div>
-  )
-}
+const Background = (props) => (
+    <img src={ImageBackground} className={props.BackgroundTheme} alt="ImageBackground" />
+)
 
 export default Background;

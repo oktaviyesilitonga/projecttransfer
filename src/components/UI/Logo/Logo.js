@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ImagesLogo from '../../../assets/images/logo/permata-bank.svg';
 
-const Logo = () => {
-  return (
-    <div>
-      <h1>Logo</h1>
+const Logo = (props) => (
+    <div class="header">
+        <Link to="#" class="permata-bank-logo">
+            <img src={ImagesLogo} alt="Permata Bank Logo" />
+        </Link>
     </div>
-  )
-}
+)
 
 export default Logo;
