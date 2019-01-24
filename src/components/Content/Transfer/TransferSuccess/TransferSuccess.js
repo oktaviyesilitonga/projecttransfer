@@ -5,16 +5,16 @@ class TransferSuccess extends Component {
     render() {
         return (
             <div>
-                <div class="transfer-icon">
+                <div className="transfer-icon">
                     <img src={LogoTransferSuccess} alt="Transfer Success" />
                 </div>
-                <div class="bank-account-name">
+                <div className="bank-account-name">
                     <p>
                         <strong>Abdy Salimin,</strong><br />
                         Transaksi telah berhasil dilakukan ke
 					</p>
                 </div>
-                <div class="bank-detail">
+                <div className="bank-detail">
                     <p>
                         Bank Central Asia (BCA)<br />
                         <strong>0293-2728-5743</strong>

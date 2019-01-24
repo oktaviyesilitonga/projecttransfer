@@ -8,7 +8,7 @@ class DetailBank extends Component {
                     <strong>Yogie Christian</strong> mengirimkan uang sebesar
 				</p>
                 <p className="amount">
-                    <strong class="color-primary">Rp 5,000,000.</strong>
+                    <strong className="color-primary">Rp 5,000,000.</strong>
                 </p>
                 <p>
                     Silakan pilih bank dan rekening yang diinginkan untuk menyelesaikan proses transfer

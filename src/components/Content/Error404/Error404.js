@@ -5,10 +5,10 @@ class Error404 extends Component {
     render() {
         return (
             <div>
-                <div class="image-banner">
+                <div className="image-banner">
                     <img src={LogoError} alt="404" width="320" />
                 </div>
-                <div class="ta-center">
+                <div className="ta-center">
                     <p>
                         <strong>Maaf,</strong>link sudah tidak berlaku.
 					</p>

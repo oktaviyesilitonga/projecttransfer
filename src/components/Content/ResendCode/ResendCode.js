@@ -19,9 +19,15 @@ class ResendCode extends Component {
                     Mohon coba kembali.
 				</div>
                 <div className="resend-code-form">
-                    <form action="detail-bank.html" className="form jsFormOTPCode" autocomplete="off">
+                    <form action="detail-bank.html" className="form jsFormOTPCode" autoComplete="off">
                         <div className="input-row">
-                            <input name="otp_code" type="text" clasName="input-text jsInputNumber jsOTPCode" pattern="\d*" maxlength="6" value="" autocomplete="off" />
+                            <input 
+                                name="otp_code" 
+                                type="text" 
+                                className="input-text jsInputNumber jsOTPCode" 
+                                pattern="\d*" 
+                                maxLength="6" 
+                                autoComplete="off" />
                         </div>
                     </form>
                 </div>
@@ -30,7 +36,10 @@ class ResendCode extends Component {
                     <Link to="/" className="close-button">Tombol Tutup</Link>
                 </div>
                 <div className="wrapper-button">
-                    <button type="button" className="button button-primary button-disabled jsConfirmVerificationCode" data-jsonurl="data/resend-code.json">Konfirmasi Kode</button>
+                    <button 
+                        type="button" 
+                        className="button button-primary button-disabled jsConfirmVerificationCode" 
+                        data-jsonurl="data/resend-code.json">Konfirmasi Kode</button>
                 </div>
             </div>
         )
